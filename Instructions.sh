@@ -48,7 +48,7 @@ kubectl get pods -n robot-shop
 # For Public to connect to the AKS cluster we need service. 
 # to connect to the cluster.
 kubectl get svc -n robot-shop
-# The IP address available will not be able to connect to AKS cluster. We need to specify IP Address and Port like IP:PorNumber. But General public will just hit the IP 
+# The IP address alone available will not be able to connect to AKS cluster. We need to specify IP Address and Port like IP:PorNumber. But General public will just hit the IP 
 # So we need Application gateway where we just hit the IP and we get the Website, we dont require to put the loadbalancer IP and Port together.
 # Although the AKS is deployed via a Load Balancer, we need Application Gateway Ingress Controller to forward request to AKS cluster
 # Navigate to Azure Portal > AKS Cluster > Networking > Go To Virtual Network integration tab > Application Gateway Ingress Controller > Manage
